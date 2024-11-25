@@ -1,0 +1,17 @@
+{
+  "name": "local-knowledge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "cursor": "node src/cursor.js"
+  },
+  "keywords": [],
+  "author": "CareteenL",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^1.7.7",
+    "dotenv": "^16.4.5",
+    "openai": "^4.73.0"
+  }
+}
