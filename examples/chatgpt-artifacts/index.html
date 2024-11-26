@@ -1,0 +1,29 @@
+<html>
+
+<head>
+  <title>升级套餐</title>
+  <script src="https://unpkg.com/react/umd/react.development.js"></script>
+  <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+  <script src="https://unpkg.com/@babel/standalone/babel.js"></script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  </link>
+  <style>
+    body {
+      background-color: #B91C1C;
+      /* Red background color */
+      color: white;
+      font-family: 'Arial', sans-serif;
+
+    }
+  </style>
+</head>
+
+<body>
+  <div id="root"></div>
+  <script
+    type="text/babel">      function App() { return (<div className="flex flex-col items-center justify-center min-h-screen">            <h1 className="text-4xl font-semibold mb-4">升级套餐</h1>            <div className="flex space-x-4 mb-8">              <button className="px-4 py-2 bg-gray-700 rounded-full text-white">个人</button>              <button className="px-4 py-2 bg-gray-800 rounded-full text-white">企业</button>            </div>            <div className="grid grid-cols-2 gap-8">              {/* Free Tier */}              <div className="bg-gray-800 p-6 rounded-lg w-72">                <h2 className="text-2xl font-semibold mb-2">Free</h2>                <p className="text-3xl mb-6">                  $0 <span className="text-xs">美月</span>                </p>                <p className="mb-6">了解 AI 如何帮您处理日常任务</p>                <button className="bg-gray-600 text-gray-400 py-2 px-4 rounded mb-6 w-full" disabled>您当前的套餐</button>                <ul className="space-y-2 text-sm">                  <li>✓ 帮助您进行写作，解决问题等</li>                  <li>✓ 对 GPT-4.0 mini 的访问权限</li>                  <li>✓ 对 GPT-4.0 的有限访问权限</li>                  <li>✓ 对数据分析、文件上传、视觉、网页浏览和图片生成功能的有限访问权限</li>                  <li>✓ 使用自定义 GPT</li>                </ul>              </div>              {/* Plus Tier */}              <div className="bg-gray-800 p-6 rounded-lg w-72">                <h2 className="text-2xl font-semibold mb-2">Plus</h2>                <p className="text-3xl mb-6">                  $20 <span className="text-xs">美月</span>                </p>                <p className="mb-6">借助扩展访问权限提升您的生产力</p>                <button className="bg-green-500 text-white py-2 px-4 rounded mb-6 w-full">升级至 Plus</button>                <ul className="space-y-2 text-sm">                  <li>✓ Free 套餐中的所有功能</li>                  <li>✓ 抢先体验新功能</li>                  <li>✓ 对 OpenAI o1-preview、OpenAI o1-mini 的访问权限</li>                  <li>✓ 对 GPT-4.0、GPT-4.0 mini、GPT-4 的访问权限</li>                  <li>✓ 享享 GPT-4.0 高达 5 倍的信息量</li>                  <li>✓ 对数据分析、文件上传、视觉、网页浏览和图片生成功能的有限访问权限</li>                  <li>✓ 对高级语言模式的访问权限</li>                </ul>              </div>            </div>            <p className="mt-8 text-gray-400">              <small>已有套餐？请<a href="#" className="underline">参见我的账单</a></small>            </p>            <p className="mt-4 text-gray-400">              <small>贵组织需要更多功能？ 查看<a href="#" className="underline">ChatGPT Enterprise</a></small>            </p>          </div>); } ReactDOM.render(<App />, document.getElementById('root'));    </script>
+
+</body>
+
+</html>
